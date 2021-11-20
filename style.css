@@ -1,0 +1,817 @@
+
+.inner {
+	width:1200px;
+	margin:0 auto;
+	height:100%;
+	position:relative;
+}
+
+/*================================================================header=======*/
+.header {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+	width:100%;
+}
+.header h1 {
+	position:absolute;
+	line-height:1;
+	top:50%;
+	left:0;
+	transform:translateY(-50%);
+	
+}
+.head_top {
+	height:99px;
+}
+.head_r {
+	position:absolute;
+	right:0;
+	transform:translateY(-50%);
+	top:50%;
+}
+.head_r div {
+	display:inline-block;
+	vertical-align: middle;
+}
+.call {
+	text-align:right;
+}
+.call em {
+	font-size:15px;
+	font-weight:bold;
+}
+.call h2 {
+	color:#ed6d00;
+		line-height:1.2;
+}
+.sns {
+	margin-left:20px;
+}
+.head_bottom {
+	background:#26b597;
+	position:relative;
+	z-index:0;
+}
+.gnb > li{
+	float:left;
+	height:60px;
+	width:calc(100%/8);
+	position:relative;
+}
+.gnb > li > a {
+	display:block;
+	line-height:60px;
+	text-align:center;
+	font-weight:bold;
+	color:#fff;
+}
+.gnb > li:hover .gnb_bar:before {
+	background:#fafafa;
+
+}
+.gnb_bar {
+	position:absolute;
+	width:100%;
+	transition:0.3s all;
+	height:0;
+	background:#fff;
+	overflow:hidden;
+	z-index:0;
+}
+.gnb_bar:hover:before {
+	background:#fafafa;
+}
+.gnb_bar:before {
+	content:"";
+	width:100%;
+	height:350px;
+	background:#fff;
+	position:absolute;
+	left:0;
+	top:0;
+	transition:0.5s all;
+	z-index:-1;
+}
+.gnb_bar li:nth-child(1) {
+	margin-top:20px;
+}
+.gnb_bar li {
+	height:30px;
+}
+.gnb_bar li a {
+	display:block;
+	font-size:14px;
+	font-weight:bold;
+	color:#999;
+	padding: 0 10px;
+	line-height:30px;
+}
+.gnb_bar li:hover a {
+	color:#26b597;
+}
+.bg {
+	position:absolute;
+	top:60px;
+	left:0;
+	background:#fff;
+	width:100%;
+	height:0;
+	z-index:-1;
+	transition:0.3s all;
+}
+.tab_banner {
+	display:none;
+}
+/*================================================================visual=======*/
+.visual {
+	margin-top:159px;
+	position:relative;
+}
+.vis_slider {
+	position:relative;
+	line-height:0;
+}
+.vis_slide01 {
+	background:url(http://www.greenhospital.co.kr/images/main/main_vi01_pc.jpg)center center no-repeat;
+	background-size:cover;
+	height:500px;
+}
+.vis_slide02 {
+	background:url(http://www.greenhospital.co.kr/images/main/main_vi02_pc.jpg)center center no-repeat;
+	background-size:cover;
+	height:500px;
+}
+.vis_slide03 {
+	background:url(http://www.greenhospital.co.kr/images/main/main_vi03_pc.jpg)center center no-repeat;
+	background-size:cover;
+	height:500px;
+}
+.vis_txt {
+	position:absolute;
+	top:25%;
+	left:0;
+	right:0;
+	text-align:center;
+}
+.vis_txt span {
+	font-size:20px;
+	font-weight:bold;
+	color:#fff;
+	line-height:1.5;
+}
+.vis_txt h2 {
+	font-size:30px;
+	color:#fff;
+	line-height:1.5;
+}
+.vis_txt em {
+	font-size:25px;
+	color:#ed6d00;
+	line-height:1.5;
+}
+.pager {
+	position:absolute;
+	top:37%;
+	left:0;
+	width:100%;
+}
+a.prev {
+	position:absolute;
+	left:0;
+}
+a.next {
+	position:absolute;
+	right:0;
+}
+
+.vis_bottom {
+	background:rgba(0,0,0,0.7);
+	position:absolute;
+	left:0;
+	bottom:0;
+	padding:20px 0;
+	width:100%;
+}
+.vis_bottom ul li {
+	float:left;
+	width:50%;
+}
+.vis_bottom ul li:nth-child(1) {
+
+}
+.vis_bottom ul li:nth-child(2) {
+	
+}
+.form_txt h3{
+	font-size:20px;
+	color:#fff;
+}
+.form_txt h3 span {
+	font-size:15px;
+	color:#fff;
+}
+.phone_r {
+	display:inline-block;
+	width:120px;
+	height:35px;
+}
+.phone_r + .phone_r  {
+	margin-left:15px;
+	position:relative;
+}
+.phone_r + .phone_r:before {
+	content:"";
+	width:8px;
+	height:1px;
+	background:#fff;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	left:-13px;
+	
+}
+.phone_r input {
+	width:100%;
+	height:100%;
+	outline:none;
+	border:none;
+}
+.btn {
+	display:inline-block;
+	width:145px;
+	height:35px;
+	margin-left:10px;
+}
+.btn button {
+	background:#925da3;
+	width:100%;
+	height:100%;
+	font-size:15px;
+	font-weight:bold;
+	color:#fff;
+	line-height:35px;
+}
+.reservation {
+	display:inline-block;
+}
+.reservation span{
+	font-size:18px;
+	color:#fff;
+}
+.reservation h2{
+	font-size:36px;
+	color:#26b597;
+	line-height:1.5;
+}
+.info {
+	display:inline-block;
+	border:1px solid #fff;
+	border-radius:10px;
+	padding:10px;
+	vertical-align: bottom;
+	margin-left:20px;
+}
+.info dl {
+	display:table;
+	width:100%;
+	vertical-align:middle;
+}
+.info dl dt {
+	display:table-cell;
+	font-size:14px;
+	color:#fff;
+	width:20%;
+}
+.info dl dd {
+	width:80%;
+	display:table-cell;
+	position:relative;
+}
+.info dl dd:before {
+	content:"";
+	width:1px;
+	height:10px;
+	background:#fff;
+	position:absolute;
+	top:7px;
+	left:-15px;
+}
+.info dl dd p {
+	font-size:14px;
+	color:#fff;
+}
+
+/*================================================================section01=======*/
+.section01 {
+	padding:80px 0;
+}
+.section01 ul li {
+	float:left;
+	width:calc(100%/4);
+	padding:0 30px;
+	text-align:center;
+	position:relative;
+}
+.section01 ul li + li:before {
+	content:"";
+	width:1px;
+	height:200px;
+	background:#ddd;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.section01 ul li span {
+	display:block;
+	margin:0 auto;
+	width:80px;
+	height:88px;
+	position:relative;
+}
+.section01 ul li span img {
+	position:absolute;
+	bottom:0;
+	left:0;
+	margin:0 auto;
+	right:0;
+}
+.section01 ul li h2 {
+	font-size:20px;
+	color:#000;
+	margin-top:10px;
+}
+.section01 ul li p {
+	font-size:15px;
+	color:#555;
+	font-weight:bold;
+	margin-top:10px;
+}
+/*================================================================section02=======*/
+.section02 {
+	padding:100px 0;
+	background:url(http://www.greenhospital.co.kr/images/main/main_sec02_bg01_pc.jpg)center center no-repeat;
+	background-size:cover;
+}
+.section02 h2 {
+	font-size:30px;
+	color:#fff;
+	text-align:center;
+}
+.sec02_slider {
+	margin:50px auto 0;
+	width:1060px;
+}
+.sec02_slider .slick-slide img {
+	display:inline-block;
+}
+.sec02_con li {
+	float:left;
+	width:calc(100%/6);
+	padding:3px;
+}
+.sec02_con li a {
+	display:block;
+	border:1px solid #fff;
+	padding:10px;
+}
+.sec02_con li a em {
+	display:inline-block;
+	line-height:1;
+	font-size:15px;
+	font-weight:bold;
+	margin-left:20px;
+	color:#fff;
+}
+.pager2 {
+	position:absolute;
+	top:60%;
+	left:0;
+	width:100%;
+}
+a.prev2 {
+	position:absolute;
+	left:0;
+	width:17px;
+	height:33px;
+	background:url(http://www.greenhospital.co.kr/images/main/main_sec02_prev_pc.png)center center no-repeat;
+}
+a.next2 {
+	position:absolute;
+	right:0;
+	width:17px;
+	height:33px;
+	background:url(http://www.greenhospital.co.kr/images/main/main_sec02_next_pc.png)center center no-repeat;
+}
+.section02 .slick-arrow.slick-hidden {
+	display:block;
+}
+/*================================================================section03=======*/
+.section03 {
+	padding:80px 0;
+}
+.section03 h2 {
+	font-size:30px;
+	color:#000;
+	text-align:center;
+}
+.sec03_con {
+	margin-top:50px;
+}
+.sec03_con li {
+	float:left;
+	width:calc(100%/4);
+	position:relative;
+}
+.sec03_con li a {
+	display:block;
+	padding-top:50%;
+	position:relative;
+	overflow:hidden;
+}
+.sec03_con li:hover:before {
+	width:calc(100% - 14px);
+}
+.sec03_con li:hover:after {
+	height:calc(100% - 14px);
+}
+.sec03_con li:hover a:before {
+	width:calc(100% - 14px);
+}
+.sec03_con li:hover a:after {
+	height:calc(100% - 14px);
+}
+.sec03_con li:before {
+	content:"";
+	width:30px;
+	height:1px;
+	bottom:7px;
+	right:7px;
+	position:absolute;
+	background:#fff;
+	z-index:1;
+	transition:0.3s all;
+}
+.sec03_con li:after {
+	content:"";
+	height:30px;
+	width:1px;
+	bottom:7px;
+	right:7px;
+	position:absolute;
+	background:#fff;
+	transition:0.3s all;
+}
+.sec03_con li a:before {
+	content:"";
+	width:30px;
+	height:1px;
+	top:7px;
+	left:7px;
+	position:absolute;
+	background:#fff;
+	z-index:1;
+	transition:0.3s all;
+}
+.sec03_con li a:after {
+	content:"";
+	height:30px;
+	width:1px;
+	top:7px;
+	left:7px;
+	position:absolute;
+	background:#fff;
+	transition:0.3s all;
+}
+.sec03_con li a span {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+}
+.sec03_con li a span img {
+	position:absolute;
+	top:0;
+	left:0;
+	max-width:100%;
+	width:100%;
+}
+.sec03_con li a p {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	font-size:15px;
+	color:#fff;
+	font-weight:bold;
+}
+
+.sec03_info {
+	margin-top:50px;
+	font-size:0;
+}
+.sec03_info > div {
+	display:inline-block;
+	vertical-align: top;
+
+}
+.sec03_notice {
+	width:60%;
+}
+.tab_wrapper {
+	position:relative;
+}
+.tab_wrapper:after {
+	content:"";
+	width:180px;
+	height:1px;
+	background:#ddd;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	right:0;
+}
+.tab_menu li{
+	display:inline-block;
+	font-size:30px;
+	color:#999;
+	cursor:pointer;
+	position:relative;
+}
+.tab_menu li + li {
+	margin-left:20px;
+	line-height:1;
+}
+.tab_menu li + li:before {
+	content:"";
+	width:1px;
+	height:20px;
+	background:#eaeaea;
+	position:absolute;
+	left:-12px;
+	top:5px;
+}
+.tab_menu li.on {
+	color:#000;
+	font-weight:bold;
+}
+.tab_txt li {
+	margin-top:20px;
+	padding-left:20px;
+	position:relative;
+}
+.tab_txt li a {
+	font-size:17px;
+	color:#999;
+	position:relative;
+}
+.tab_txt li a:before {
+	content:"";
+	width:3px;
+	height:3px;
+	background:#000;
+	border-radius:50%;
+	position:absolute;
+	top:50%;
+	left:-20px;
+	transform:translateY(-50%);
+}
+.tab_txt li a span {
+	float:right;
+}
+.sec03_video {
+	width:40%;
+	padding-left:30px;
+}
+.sec03_video h3 {
+	font-size:30px;
+	color:#000;
+	position:relative;
+}
+.sec03_video h3:after {
+	content:"";
+	width:280px;
+	height:1px;
+	background:#ddd;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	right:0;
+}
+.video {
+	margin-top:20px;
+}
+@media screen and (max-width:1024px) {
+	.inner {
+		max-width:100%;
+		width:100%;
+	}
+	.header h1{
+		left:3%;
+	}
+	.header h1 img {
+		height:74px;
+	}
+	.head_top {
+		height:90px;
+	}
+	.head_r {
+		display:none;
+	}
+	.gnb {
+		display:none;
+	}
+	.tab_banner {
+		display:block;
+		height:50px;
+		background:#41c9ac;
+		width:100%;
+		padding:0 3%;
+	}
+	.tab_banner .inner {
+		text-align:right;
+	}
+	.call, 
+	.sns {
+		display:inline-block;
+		vertical-align:middle;
+	}
+	.tab_banner .call em {
+		font-size:15px;
+		font-weight:bold;
+		color:#fff;
+		display:block;
+		line-height:50px;
+	}
+	
+	.visual{
+		margin-top:140px;
+	}
+	.vis_slide01,
+	.vis_slide02,
+	.vis_slide03 {
+		height:534px;
+	}
+	.vis_bottom {
+		position:static;
+		padding:30px 3%;
+	}
+	.form_txt h3 span {
+		display:block;
+		font-size:14px;
+	}
+	.phone {
+		font-size:0;
+	}
+	.phone_r {
+		width:calc((100% - 30px)/3);
+		height:40px;
+	}
+	.phone_r input {
+		font-size:15px;
+		padding:0 10px;
+	}
+	.btn {
+		width:100%;
+		margin-left:0;
+		margin-top:10px;
+		height:40px;
+	}
+	.vis_bottom ul li:nth-child(2) {
+		padding-left:5%;
+	}
+	.reservation {
+		display:block;
+	}
+	.info {
+		display:block;
+		margin-left:0;
+	}
+
+	.section02 {
+		padding:50px 3%;
+	}
+	.sec02_slider {
+		width:100%;
+		padding:0 3%;
+	}
+	.sec02_con li {
+		width:calc(100%/4);
+	}
+	.sec02_con li:nth-child(n+9) {
+		display:none;
+	}
+
+	.section03 {
+		padding:50px 3%;
+	}
+	.tab_menu li {
+		font-size:20px;
+	}
+	.tab_menu li + li:before {
+		top:0;
+	}
+	.tab_wrapper:after {
+		width:20%;
+	}
+	.tab_txt li {
+		margin-top:10px;
+	}
+	.tab_txt li a {
+		font-size:15px;
+	}
+
+	.sec03_video h3 {
+		font-size:20px;
+	}
+	.sec03_video h3:after {
+		width:60%;
+	}
+	.video iframe {
+		width:100%;
+		height:100%;
+	}
+}
+
+
+@media screen and (max-width:768px) {
+	.header h1 img {
+		height:40px;
+	}
+	.tab_banner {
+		height:35px;
+	}
+	.tab_banner .call em {
+		font-size:12px;
+		line-height:35px;
+	}
+	.sns a img {
+		height:25px;
+	}
+	.head_top {
+		height:60px;
+	}
+
+	.visual {
+		margin-top:95px;
+	}
+	.vis_slide01,
+	.vis_slide02,
+	.vis_slide03 {
+		height:696px;
+	}
+	.vis_txt {
+		top:50%;
+		transform:translateY(-50%);
+	}
+	.vis_bottom ul li {
+		float:unset;
+		width:100%;
+	}
+	.vis_bottom ul li:nth-child(2) {
+		padding-left:0;
+	}
+	.vis_bottom ul li + li {
+		margin-top:30px;
+	}
+	.pager {
+		top:28%;
+	}
+	.section01 ul li {
+		width:50%;
+	}
+	.section01 ul li:nth-child(n+3) {
+		margin-top:20px;
+	}
+
+	.section01 ul li + li:before {
+		height:150px;
+		top:10px;
+	}
+	.section01 ul li h2 {
+		font-size:16px;
+	}
+	.section01 ul li p {
+		font-size:13px;
+		line-height:1.5;
+	}
+
+	.section02 h2 {
+		font-size:20px;
+	}
+	.sec02_slider {
+		margin:20px auto 0;
+	}
+	.sec02_con li {
+		width:calc(100%/2);
+	}
+	.sec02_con li:nth-child(n+7) {
+		display:none;
+	}	
+
+	.sec03_con li {
+		width:calc(100%/3);
+	}
+}
+
